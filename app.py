@@ -12,9 +12,9 @@ def bye():
     return 'Bye!'
 
 # use <name> to input variable in url
-@app.route("/username/<name>")
-def greet(name):
-    return f"Hello {name}"
+@app.route("/username/<name>/<int:number>")
+def greet(name, number):
+    return f"Hello there {name}, you are {number} years old!"
 
 
 if __name__ == '__main__':
