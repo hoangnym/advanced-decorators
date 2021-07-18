@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return '<h1 style="text-align:center">Hello World!</h1>' \
+           '<p>This is a paragraph.</p>' \
+           '<img width="400px"' \
+           'src="https://media.4-paws.org/1/e/d/6/1ed6da75afe37d82757142dc7c6633a532f53a7d/VIER%20PFOTEN_2019-03-15_001-2886x1999-1920x1330.jpg">'
 
 @app.route('/bye')
 def bye():
